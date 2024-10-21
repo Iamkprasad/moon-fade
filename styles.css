@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+}
+
+#moon {
+    opacity: 0;
+    transition: opacity 3s;
+    background-image: url('moon.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    width: 50vmin;
+    height: 50vmin;
+    margin: 0 auto;
+}
+
+#poem {
+    opacity: 0;
+    transition: opacity 3s;
+    margin-top: 20px;
+}
+
+#nextButton {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nextButton:hover {
+    background-color: black;
+    color: white;
+}
