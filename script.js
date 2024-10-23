@@ -6,13 +6,21 @@ window.onload = function() {
             document.getElementById('poem').style.opacity = 1;
             setTimeout(function() {
                 document.getElementById('playButton').style.display = 'block';
+                document.getElementById('stopButton').style.display = 'block';
             }, 3000);
         }, 3000);
     }, 2000);
 }
 
+// Play the song when the Play button is clicked
 document.getElementById('playButton').addEventListener('click', function() {
     var audio = document.getElementById('audioPlayer');
     audio.play();
-    this.style.display = 'none'; // Hide the play button after the song starts playing
+});
+
+// Stop the song when the Stop button is clicked
+document.getElementById('stopButton').addEventListener('click', function() {
+    var audio = document.getElementById('audioPlayer');
+    audio.pause();
+    audio.currentTime = 0; // Reset the song to the beginning
 });
