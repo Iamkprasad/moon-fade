@@ -32,7 +32,7 @@ body {
     margin-top: 20px;
 }
 
-#nextButton {
+#playButton {
     display: none;
     background-color: black;
     color: white;
@@ -43,7 +43,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-#nextButton:hover {
+#playButton:hover {
     background-color: white;
     color: black;
+}
+
+/* Hide the audio player */
+#audioPlayer {
+    display: none;
 }
