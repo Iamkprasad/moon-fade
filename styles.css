@@ -32,7 +32,7 @@ body {
     margin-top: 20px;
 }
 
-#playButton {
+button {
     display: none;
     background-color: black;
     color: white;
@@ -43,9 +43,15 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-#playButton:hover {
+button:hover {
     background-color: white;
     color: black;
+}
+
+/* Make both buttons visible after the delay */
+#playButton, #stopButton {
+    display: block;
+    margin-top: 10px;
 }
 
 /* Hide the audio player */
